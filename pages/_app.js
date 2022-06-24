@@ -1,11 +1,18 @@
 import Layout from "../components/Layout";
 import "../styles/globals.css";
+import "react-slideshow-image/dist/styles.css";
+
+import React from "react";
+import Head from "../components/Head";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Head />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
 
