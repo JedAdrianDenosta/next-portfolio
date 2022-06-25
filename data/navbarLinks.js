@@ -8,8 +8,8 @@ const navbarLinks = [
     route: "/#skills",
   },
   {
-    name: "Portfolio",
-    route: "/#portfolio",
+    name: "Projects",
+    route: "/#projects",
   },
   {
     name: "About",
