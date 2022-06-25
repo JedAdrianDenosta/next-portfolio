@@ -6,8 +6,8 @@ import { Slide } from "react-slideshow-image";
 
 const ProjectsSection = () => {
   return (
-    <div className="max-w-5xl mx-auto w-full px-10 py-12">
-      <h1 className="text-4xl font-bold mb-8">My projects...</h1>
+    <div className="max-w-6xl mx-auto w-full px-10 py-12">
+      <h1 className="text-3xl font-semibold mb-8">My projects...</h1>
       <div className="flex flex-col gap-y-10">
         {projects.map((project, i) => {
           return (
@@ -37,7 +37,7 @@ const ProjectCard = ({
     <div className="grid grid-cols-2 gap-8">
       {/* Description */}
       <div
-        className={`rounded-md flex flex-col gap-y-5 bg-[#7876f7] p-10 ${
+        className={`rounded-md flex flex-col gap-y-5 bg-indigo-500/90 p-10 ${
           index % 2 == 0 ? "order-first" : "order-last"
         }`}
       >
@@ -46,7 +46,7 @@ const ProjectCard = ({
           {projectDescription}
         </div>
         <div className="flex gap-5 justify-between items-center">
-          <button className="shadow text-[#7876f7] font-semibold bg-white text-sm px-5 py-3 rounded-full">
+          <button className="shadow text-indigo-500/90 font-semibold bg-white text-sm px-5 py-3 rounded-full">
             View Website
           </button>
           <Link href="https://github.com/">
@@ -57,7 +57,7 @@ const ProjectCard = ({
         </div>
       </div>
       {/* Image Slideshow */}
-      <div className="bg-red-400">
+      <div className="bg-blue-200">
         <Slide>
           {images.map((image, i) => (
             <div className="each-slide w-full h-full" key={i}>
