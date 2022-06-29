@@ -11,8 +11,9 @@ const ProjectsSection = () => {
         <span className="text-indigo-900 flex flex-col items-center py-20">
           <h1 className="text-3xl font-bold mb-2">My Projects</h1>
           <p className=" font-light max-w-xl text-center">
-            "Productivity is never an accident. It is always the result of a
-            commitment to excellence, intelligent planning, and focused effort."
+            {'"'}Productivity is never an accident. It is always the result of a
+            commitment to excellence, intelligent planning, and focused effort.
+            {'"'}
             —Paul J. Meyer
           </p>
         </span>

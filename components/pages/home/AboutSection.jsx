@@ -13,8 +13,9 @@ const AboutSection = () => {
         <span className="text-white flex flex-col items-center py-20">
           <h1 className="text-3xl font-bold mb-2">About Me</h1>
           <p className=" font-light max-w-xl text-center">
-            "Yesterday is history. Tomorrow is a mystery. And today? Today is a
-            gift. That's why we call it the present." —Eleanor Roosevelt
+            {'"'}Yesterday is history. Tomorrow is a mystery. And today? Today
+            is a gift. That's why we call it the present.{'"'} —Eleanor
+            Roosevelt
           </p>
         </span>
         <div className="flex flex-col lg:flex-row justify-center gap-10">
@@ -35,11 +36,13 @@ const AboutSection = () => {
               UX and UI Designer / Web Designer and Developer / Photographer
             </p>
             <p className="text-sm font-normal text-gray-600">
-              In Jed's view, a design must address a concern, encourage users,
-              and illuminate in a pleasant, trustworthy, and human-centered way.
+              In Jed{"'"}s view, a design must address a concern, encourage
+              users, and illuminate in a pleasant, trustworthy, and
+              human-centered way.
             </p>
             <p className="text-base font-medium text-gray-700">
-              Make contact with him! Below, you'll find his contact information.
+              Make contact with him! Below, you{"'"}ll find his contact
+              information.
             </p>
             <p className="text-sm font-normal text-gray-600">
               Email: jedadrian.denosta@wvsu.edu.ph
@@ -81,7 +84,7 @@ const AboutSection = () => {
                 kindness and compassion.
               </p>
               <p>
-                In my childhood, I've enjoyed pretending to be a doctor or a
+                In my childhood, I{"'"}ve enjoyed pretending to be a doctor or a
                 nurse with my cousins and friends; our patients were teddy
                 bears. Because of my numerous hospitalizations due to asthma, I
                 have always paid much attention to my health. When I was

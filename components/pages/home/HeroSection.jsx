@@ -38,7 +38,7 @@ const HeroSection = () => {
               <a className="underline underline-offset-1 decoration-sky-500">
                 User Experience and User Interfaces
               </a>{" "}
-              is something I value since it allows me to understand people's
+              is something I value since it allows me to understand people{"'"}s
               current problems and translate their pain points to deliver the
               most captivating experience.{" "}
               <a className="underline underline-offset-1 decoration-sky-500">

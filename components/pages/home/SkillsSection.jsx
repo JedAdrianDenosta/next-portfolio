@@ -9,8 +9,9 @@ const SkillsSection = () => {
         <span className="text-white flex flex-col items-center py-20">
           <h1 className="text-3xl font-bold mb-2">My Skills</h1>
           <p className=" font-light max-w-xl text-center">
-            "I really believe that everyone has a talent, ability, or skill that
-            he can mine to support himself and to succeed in life." —Dean Koontz
+            {'"'}I really believe that everyone has a talent, ability, or skill
+            that he can mine to support himself and to succeed in life.{'"'}
+            —Dean Koontz
           </p>
         </span>
         <div className="grid lg:grid-cols-3 place-content-center gap-10">
