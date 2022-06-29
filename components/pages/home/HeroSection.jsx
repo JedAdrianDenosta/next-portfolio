@@ -54,18 +54,17 @@ const HeroSection = () => {
             </p>
           </div>
           <div className=" space-x-4">
-            <button
-              className="text-indigo-500 border border-indigo-500 px-5 py-2 rounded-full hover:bg-indigo-500/90 hover:text-white"
-              type="button"
-            >
-              CTA
-            </button>
-            <button
-              className="text-white bg-indigo-500 px-5 py-2 rounded-full hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-2"
-              type="button"
-            >
-              Get in touch
-            </button>
+            <Link href={"#"}>
+              <a className="text-indigo-500 border border-indigo-500 px-5 py-2 rounded-full hover:bg-indigo-500/90 hover:text-white">
+                {" "}
+                Get in touch
+              </a>
+            </Link>
+            <Link href={"#about"}>
+              <a className="text-white bg-indigo-500 px-5 py-2 rounded-full hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-2">
+                View Resume
+              </a>
+            </Link>
           </div>
         </div>
         {/* COL 2 */}
