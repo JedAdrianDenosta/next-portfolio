@@ -14,7 +14,7 @@ const AboutSection = () => {
           <h1 className="text-3xl font-bold mb-2">About Me</h1>
           <p className=" font-light max-w-xl text-center">
             {'"'}Yesterday is history. Tomorrow is a mystery. And today? Today
-            is a gift. That's why we call it the present.{'"'} —Eleanor
+            is a gift. That{"'"}s why we call it the present.{'"'} —Eleanor
             Roosevelt
           </p>
         </span>
