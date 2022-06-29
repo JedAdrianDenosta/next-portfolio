@@ -61,7 +61,7 @@ const HeroSection = () => {
               </a>
             </Link>
             <Link href={"#about"}>
-              <a className="text-white bg-indigo-500 px-5 py-2 rounded-full hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-2">
+              <a className="text-white border border-indigo-500 bg-indigo-500 px-5 py-2 rounded-full hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-2">
                 View Resume
               </a>
             </Link>
