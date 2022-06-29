@@ -3,6 +3,7 @@ import Image from "next/image";
 import HeroSection from "../components/pages/home/HeroSection";
 import SkillsSection from "../components/pages/home/SkillsSection";
 import ProjectsSection from "../components/pages/home/ProjectsSection";
+import AboutSection from "../components/pages/home/AboutSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <SkillsSection />
       <ProjectsSection />
+      <AboutSection />
     </div>
   );
 }

@@ -13,7 +13,7 @@ const navbarLinks = [
   },
   {
     name: "About",
-    route: "/about",
+    route: "/#about",
   },
 ];
 

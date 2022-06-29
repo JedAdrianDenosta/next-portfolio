@@ -1,21 +1,37 @@
+import { FiPenTool as Design } from "react-icons/fi";
+import { FiCode as Code } from "react-icons/fi";
+import { FiCamera as Camera } from "react-icons/fi";
+
 const skills = [
   {
-    image: "/",
-    title: "Photography",
+    icon: <Design />,
+    title: "Designer",
     description:
-      "I am a student Photographer, founder of DC Portraitures. Aim to bring smile in your face at your best moment.",
+      "I favor clear design patterns, basic content organization, and intelligent interactions.",
+    header: "Things I enjoy designing:",
+    list: "UX, UI, Web, Mobile, Apps, Logos",
+    titleTwo: "Design Tools:",
+    tools: "Adobe XD, Figma, Photoshop, Illustrator, Pen & Paper",
   },
   {
-    image: "/",
-    title: "Photography",
+    icon: <Code />,
+    title: "Front-End Developer",
     description:
-      "I am a student Photographer, founder of DC Portraitures. Aim to bring smile in your face at your best moment.",
+      "I like making things from scratch with code and seeing how they work on the web.",
+    header: "Languages I utilize:",
+    list: "HTML, CSS, Javascript, TailwindCSS, React, Next.JS",
+    titleTwo: "Developer Tools:",
+    tools: "Visual Studio Code, Git, GitHub",
   },
   {
-    image: "/",
+    icon: <Camera />,
     title: "Photography",
     description:
-      "I am a student Photographer, founder of DC Portraitures. Aim to bring smile in your face at your best moment.",
+      "Through the use of pictures, I hope to evoke a feeling and tell a story in people's minds.",
+    header: "Photography styles:",
+    list: "Fashion, Portraits, Landscapes, Astro, Nature, Travel",
+    titleTwo: "Design Tools:",
+    tools: "Lightroom, Photoshop, Illustrator",
   },
 ];
 

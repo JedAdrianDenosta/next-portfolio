@@ -8,7 +8,7 @@ const Head = ({ pageTitle = "Home", description = "", pagePath = "home" }) => {
       render={(meta) => <NextHead>{meta}</NextHead>}
       siteTitle="Jed Adrian Denosta"
       pageTitle={pageTitle}
-      titleTemplate="[pageTitle] | [siteTitle]"
+      titleTemplate="[siteTitle] | [pageTitle]"
       description={description}
       baseSiteUrl="https://jed.vercel.app/"
       pagePath={pagePath}
