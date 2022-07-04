@@ -73,7 +73,12 @@ const HeroSection = () => {
         </div>
         {/* COL 2 */}
         <div className="pt-12 lg:pt-0 flex justify-center w-fit h-fit">
-          <Image src={"/hero-image.svg"} width={750} height={750} />
+          <Image
+            src="/hero-image.svg"
+            alt="Jed's hero image"
+            width={800}
+            height={800}
+          />
         </div>
       </div>
     </div>
