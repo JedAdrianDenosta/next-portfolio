@@ -13,7 +13,7 @@ const Head = ({ pageTitle = "Home", description = "", pagePath = "home" }) => {
       baseSiteUrl="https://jedadrian.vercel.app/"
       pagePath={pagePath}
       keywords={["creative-agency", "phantom", "work"]}
-      imageUrl="/"
+      imageUrl="/public/favicon.ico"
       imageAlt="Jed Logo"
       twitter={{
         cardSize: "large",
