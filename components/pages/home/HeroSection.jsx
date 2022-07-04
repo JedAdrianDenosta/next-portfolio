@@ -76,8 +76,8 @@ const HeroSection = () => {
           <Image
             src="/hero-image.svg"
             alt="Jed's hero image"
-            width={800}
-            height={800}
+            width={650}
+            height={650}
           />
         </div>
       </div>
