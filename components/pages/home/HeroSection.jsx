@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div className="max-w-7xl mx-auto w-full px-10 py-12 lg:py-0 lg:pb-36">
       {/* GRID CONTAINER */}
-      <div className="grid md:grid-cols-2">
+      <div className="grid lg:grid-cols-2">
         {/* COL 1 */}
         <div className="flex flex-col gap-y-10 justify-center">
           <h1 className="font-extrabold text-6xl md:text-7xl lg:text-6xl text-indigo-500">
@@ -72,7 +72,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* COL 2 */}
-        <div className="pt-12 lg:pt-0 flex justify-center">
+        <div className="pt-12 lg:pt-0 flex justify-center w-fit h-fit">
           <Image src={"/hero-image.svg"} width={750} height={750} />
         </div>
       </div>
