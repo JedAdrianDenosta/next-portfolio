@@ -72,8 +72,9 @@ const HeroSection = () => {
           </div>
         </div>
         {/* COL 2 */}
-        <div className="pt-12 lg:pt-0 flex justify-center w-fit h-fit">
+        <div className="pt-12 lg:pt-0 flex items-center justify-center w-full h-fit">
           <Image
+            layout="intrinsic"
             src="/hero-image.svg"
             alt="Jed's hero image"
             width={650}
