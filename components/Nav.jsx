@@ -11,7 +11,7 @@ const Nav = () => {
             Jed Adrian
           </a>
         </Link>
-        <ul className="flex gap-x-5 md:gap-x-10 ">
+        <ul className="flex gap-x-2 md:gap-x-10 ">
           {navbarLinks.map((navbarLink, i) => {
             return (
               <Link href={navbarLink.route} key={i}>
