@@ -23,6 +23,7 @@ const AboutSection = () => {
             <span className="flex justify-center">
               <Image
                 className="rounded"
+                alt="Jed's profile image"
                 src={"/myProfile.jpg"}
                 width={350}
                 height={350}
