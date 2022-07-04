@@ -10,7 +10,7 @@ const Head = ({ pageTitle = "Home", description = "", pagePath = "home" }) => {
       pageTitle={pageTitle}
       titleTemplate="[siteTitle] | [pageTitle]"
       description={description}
-      baseSiteUrl="https://jed.vercel.app/"
+      baseSiteUrl="https://jedadrian.vercel.app/"
       pagePath={pagePath}
       keywords={["creative-agency", "phantom", "work"]}
       imageUrl="/"
