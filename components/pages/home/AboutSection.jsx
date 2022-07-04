@@ -71,33 +71,34 @@ const AboutSection = () => {
             </h1>
             <div className="text-gray-600 space-y-6">
               <p>
-                Mabuhay! ✨ I am Jed Adrian Denosta, and I am from the
-                Philippines. I am a Junior student at West Visayas State
-                University pursuing a Bachelor of Science in Computer Science
-                specializing in Artificial Intelligence.
+                Mabuhay! ✨ I am Jed Adrian Denosta, 21 years of age, and I
+                reside in Capiz, Philippines.
               </p>
               <p>
-                I grew up in a humble beginning where we lived in a small house.
-                I always look up to my mother as she is the strongest person I
-                have ever known, and she taught me the value of setting goals
-                and having a life mission, which is to treat others with
-                kindness and compassion.
+                I am a 🧑‍💻 Junior student at West Visayas State University
+                pursuing a Bachelor of Science in Computer Science specializing
+                in Artificial Intelligence. My hobbies are ✏️ UX and UI Design,
+                📷 Photography, and 🏸 Badminton.
+              </p>
+
+              <p>
+                Technology has been a massive part of my life; it is where my
+                interest thrives, mainly in 🏥 medical care, and I aim to assist
+                as it benefits individuals even with the slight help by saving
+                lives. Artificial Intelligence makes society evolve as it seeks
+                to solve concerns much faster and more accurately.
               </p>
               <p>
-                In my childhood, I{"'"}ve enjoyed pretending to be a doctor or a
-                nurse with my cousins and friends; our patients were teddy
-                bears. Because of my numerous hospitalizations due to asthma, I
-                have always paid much attention to my health. When I was
-                hospitalized last 2019, it saddened me to see patients
-                struggling from a lack of medical care. I observed poor
-                healthcare in my country, which motivates me to engage in
-                technology, especially in the healthcare industry, that aims to
-                assist Filipinos and people across the globe. With my passion
-                for technology, our current thesis study assists first
-                responders in expediting their workflow where emergency cases
-                are streamlined. Through an application, an algorithm recommends
-                a list of hospitals and helps transport patients to the nearest
-                and most reliable hospital.
+                With my passion for technology, our current thesis study assists
+                first responders in expediting their workflow where emergency
+                cases are streamlined with the use of AI. Through our
+                application, the algorithm we built recommends a list of
+                hospitals and helps transport patients to the nearest and best
+                hospital for the patient{"'"}s needs.
+              </p>
+              <p>
+                Poor health services in my country really push me to work in
+                healthcare technology to help Filipinos and people worldwide.
               </p>
             </div>
           </div>
