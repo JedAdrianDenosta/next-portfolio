@@ -11,11 +11,11 @@ const Nav = () => {
             Jed Adrian
           </a>
         </Link>
-        <ul className="flex gap-x-10">
+        <ul className="flex gap-x-5 md:gap-x-10 ">
           {navbarLinks.map((navbarLink, i) => {
             return (
               <Link href={navbarLink.route} key={i}>
-                <a className="hidden lg:inline-block">
+                <a className="">
                   <li className="text-sm text-gray-500 hover:text-indigo-500 focus:text-indigo-500 focus:bg-gray-200 focus:outline-none focus:shadow-outline no-underline hover:underline hover:underline-offset-8 hover:font-semibold">
                     {navbarLink.name}
                   </li>
