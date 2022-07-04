@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import projects from "../../../data/projects";
-import { FaGithub as GitHubIcon } from "react-icons/fa";
+import { FiGlobe as Globe } from "react-icons/fi";
 
 const ProjectsSection = () => {
   return (
-    <div className="relative my-36 lg:my-72" id="projects">
-      <div className="mx-auto w-full h-1/4 lg:h-1/2 absolute bg-indigo-50 right-0 left-0"></div>
+    <div className="relative my-28 lg:my-72" id="projects">
+      <div className="mx-auto w-full h-1/2 lg:h-1/2 absolute bg-indigo-50 right-0 left-0"></div>
       <div className="max-w-7xl mx-auto w-full px-10 relative">
         <span className="text-indigo-900 flex flex-col items-center py-20">
           <h1 className="text-3xl font-bold mb-2">My Projects</h1>
@@ -54,14 +54,20 @@ const ProjectCard = ({
           {projectDescription}
         </div>
         <div className="flex gap-5 justify-between items-center">
-          <button className="hover:shadow-xl hover:shadow-indigo-500/30 text-white font-semibold bg-indigo-500 text-sm px-5 py-3 rounded-full">
+          <button
+            disabled
+            className="cursor-not-allowed hover:shadow-xl hover:shadow-indigo-500/30 text-white font-semibold bg-indigo-500 text-sm px-5 py-3 rounded-full"
+          >
             Take a look
           </button>
-          <Link href="https://github.com/">
-            <a>
-              <GitHubIcon size="1.5rem" className="text-gray-800" />
-            </a>
-          </Link>
+
+          <a>
+            <Globe
+              size="1.5rem"
+              className="text-gray-800 cursor-not-allowed"
+              disabled
+            />
+          </a>
         </div>
       </div>
     </div>
