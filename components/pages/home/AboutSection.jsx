@@ -9,12 +9,12 @@ const AboutSection = () => {
   return (
     <div className="relative" id="about">
       <div className="mx-auto w-full h-1/4 lg:h-1/2 absolute bg-indigo-500 right-0 left-0"></div>
-      <div className="max-w-7xl mx-auto w-full px-10 mb-36 lg:mb-72 relative">
+      <div className="max-w-7xl mx-auto w-full px-10 mb-36 lg:mb-56 relative">
         <span className="text-white flex flex-col items-center py-20">
           <h1 className="text-3xl font-bold mb-2">About Me</h1>
           <p className=" font-light max-w-xl text-center">
             {'"'}Yesterday is history. Tomorrow is a mystery. And today? Today
-            is a gift. That{"'"}s why we call it the present.{'"'} —Eleanor
+            is a gift. That{"'"}s why we call it the present.{'"'}—Eleanor
             Roosevelt
           </p>
         </span>
