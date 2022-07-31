@@ -5,17 +5,17 @@ import { FiCamera as Camera } from "react-icons/fi";
 const skills = [
   {
     icon: <Design />,
-    title: "Designer",
+    title: "Design",
     description:
       "I favor clear design patterns, basic content organization, and intelligent interactions.",
     header: "Things I enjoy designing:",
     list: "UX, UI, Web, Mobile, Apps, Logos",
     titleTwo: "Design Tools:",
-    tools: "Adobe XD, Figma, Photoshop, Illustrator, Pen & Paper",
+    tools: "Figma, Adobe XD, Photoshop, Illustrator, Pen & Paper",
   },
   {
     icon: <Code />,
-    title: "Front-End Developer",
+    title: "Front-End Development",
     description:
       "I like making things from scratch with code and seeing how they work on the web.",
     header: "Languages I utilize:",
@@ -31,7 +31,7 @@ const skills = [
     header: "Photography styles:",
     list: "Fashion, Portraits, Landscapes, Astro, Nature, Travel",
     titleTwo: "Design Tools:",
-    tools: "Lightroom, Photoshop, Illustrator",
+    tools: "Lightroom Classic, Photoshop, Illustrator",
   },
 ];
 
