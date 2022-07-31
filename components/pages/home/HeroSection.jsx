@@ -56,9 +56,9 @@ const HeroSection = () => {
               portrayal to people through photographs.
             </p>
           </div>
-          <div className=" space-x-4 pt-4">
+          <div className=" gap-4 pt-4 flex flex-wrap">
             <Link href={"#about"}>
-              <a className="text-indigo-500 border border-indigo-500 px-7 py-4 rounded-xl hover:bg-indigo-500/90 hover:text-white">
+              <a className="text-indigo-500 border border-indigo-500 px-5 sm:px-7 py-4 rounded-xl hover:bg-indigo-500/90 hover:text-white">
                 {" "}
                 Get In Touch
               </a>
@@ -68,7 +68,7 @@ const HeroSection = () => {
                 "https://drive.google.com/file/d/1MpeEtfQljjV19Z3vQRlPQmwcoNc9JMw1/view?usp=sharing"
               }
             >
-              <a className="text-white border border-indigo-500 bg-indigo-500 px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-2">
+              <a className="text-white border border-indigo-500 bg-indigo-500 px-5 sm:px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-2">
                 View Resume
               </a>
             </Link>
