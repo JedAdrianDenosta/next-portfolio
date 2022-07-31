@@ -9,8 +9,8 @@ const ProjectsSection = () => {
       <div className="mx-auto w-full h-1/2 lg:h-1/2 absolute bg-indigo-50 right-0 left-0"></div>
       <div className="max-w-7xl mx-auto w-full px-10 relative">
         <span className="text-indigo-900 flex flex-col items-center py-20">
-          <h1 className="text-3xl font-bold mb-2">My Projects</h1>
-          <p className=" font-light max-w-xl text-center">
+          <h1 className="text-3xl font-bold mb-2">Projects</h1>
+          <p className=" font-light max-w-xl text-center text-sm opacity-50">
             {'"'}Productivity is never an accident. It is always the result of a
             commitment to excellence, intelligent planning, and focused effort.
             {'"'}
@@ -46,7 +46,7 @@ const ProjectCard = ({
   return (
     <div className="flex gap-8">
       {/* Description */}
-      <div className="rounded-md flex flex-col justify-around gap-y-5 bg-white shadow-2xl shadow-indigo-500/20 p-10 group-hover:opacity-95">
+      <div className="rounded-md flex flex-col justify-around gap-y-5 bg-white shadow-2xl shadow-indigo-500/20 p-10 group-hover:opacity-95 hover:shadow-2xl hover:shadow-indigo-500/50">
         <h1 className="text-indigo-500 text-4xl font-semibold">
           {projectName}
         </h1>

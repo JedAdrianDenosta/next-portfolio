@@ -12,7 +12,7 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto w-full px-10 mb-36 lg:mb-56 relative">
         <span className="text-white flex flex-col items-center py-20">
           <h1 className="text-3xl font-bold mb-2">About Me</h1>
-          <p className=" font-light max-w-xl text-center">
+          <p className=" font-light max-w-xl text-center text-sm opacity-75">
             {'"'}Yesterday is history. Tomorrow is a mystery. And today? Today
             is a gift. That{"'"}s why we call it the present.{'"'}—Eleanor
             Roosevelt
@@ -50,17 +50,17 @@ const AboutSection = () => {
             </p>
             <div className="text-2xl flex gap-x-5">
               <Link href="https://www.facebook.com/jedadrian.denosta">
-                <a className="hover:text-indigo-500/80">
+                <a className="hover:text-gray-800 text-gray-500">
                   <Facebook />
                 </a>
               </Link>
               <Link href="https://github.com/JedAdrianDenosta">
-                <a className="hover:text-indigo-500/80">
+                <a className="hover:text-gray-800 text-gray-500">
                   <GitHub />
                 </a>
               </Link>
               <Link href="https://www.linkedin.com/in/jed-adrian-denosta-6b409720a/">
-                <a className="hover:text-indigo-500/80">
+                <a className="hover:text-gray-800 text-gray-500">
                   <LinkedIn />
                 </a>
               </Link>

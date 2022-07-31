@@ -10,8 +10,8 @@ const Footer = () => {
       <footer className="bg-indigo-500 mx-auto w-full">
         <div className="max-w-7xl mx-auto w-full py-10 space-y-10 text-white">
           <Link href="/">
-            <a className=" text-lg font-medium tracking-wide flex justify-center">
-              Jed Adrian
+            <a className=" text-lg font-bold tracking-wide flex justify-center">
+              JAD
             </a>
           </Link>
           <div className="text-2xl flex justify-center gap-x-5">

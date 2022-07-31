@@ -7,9 +7,7 @@ const Nav = () => {
     <>
       <div className="max-w-7xl mx-auto w-full px-10 flex justify-between gap-x-5 h-28 items-center">
         <Link href="/">
-          <a className=" text-xl font-bold tracking-wide text-sky-500">
-            Jed Adrian
-          </a>
+          <a className=" text-xl font-bold tracking-wide text-sky-500">JAD</a>
         </Link>
         <ul className="flex gap-x-2 md:gap-x-10">
           {navbarLinks.map((navbarLink, i) => {

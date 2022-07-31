@@ -12,9 +12,12 @@ const HeroSection = () => {
       <div className="grid lg:grid-cols-2">
         {/* COL 1 */}
         <div className="flex flex-col gap-y-10 justify-center">
-          <h1 className="font-extrabold text-6xl md:text-7xl lg:text-6xl text-indigo-500">
-            👋 Hello, <br /> I am Jed.
-          </h1>
+          <span className=" space-y-2">
+            <h1 className="text-gray-500">👋 Hello mate! I am,</h1>
+            <h2 className="font-extrabold text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-sky-600 tracking-tight">
+              Jed Adrian
+            </h2>
+          </span>
           <div className="text-2xl flex gap-x-5 text-gray-500">
             <Link href="https://www.facebook.com/jedadrian.denosta">
               <a className="transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-800">
@@ -53,9 +56,9 @@ const HeroSection = () => {
               portrayal to people through photographs.
             </p>
           </div>
-          <div className=" space-x-4">
+          <div className=" space-x-4 pt-4">
             <Link href={"#about"}>
-              <a className="text-indigo-500 border border-indigo-500 px-5 py-2 rounded-full hover:bg-indigo-500/90 hover:text-white">
+              <a className="text-indigo-500 border border-indigo-500 px-7 py-4 rounded-full hover:bg-indigo-500/90 hover:text-white">
                 {" "}
                 Get in touch
               </a>
@@ -65,8 +68,8 @@ const HeroSection = () => {
                 "https://drive.google.com/file/d/1MpeEtfQljjV19Z3vQRlPQmwcoNc9JMw1/view?usp=sharing"
               }
             >
-              <a className="text-white border border-indigo-500 bg-indigo-500 px-5 py-2 rounded-full hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-2">
-                View Resumé
+              <a className="text-white border border-indigo-500 bg-indigo-500 px-7 py-4 rounded-full hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-2">
+                View Resume
               </a>
             </Link>
           </div>
@@ -77,8 +80,8 @@ const HeroSection = () => {
             layout="intrinsic"
             src="/hero-image.svg"
             alt="Jed's hero image"
-            width={650}
-            height={650}
+            width={600}
+            height={600}
           />
         </div>
       </div>

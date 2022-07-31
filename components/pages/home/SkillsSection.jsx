@@ -7,8 +7,8 @@ const SkillsSection = () => {
       <div className="mx-auto w-full h-1/4 lg:h-1/2 absolute bg-indigo-500 right-0 left-0"></div>
       <div className="max-w-7xl mx-auto w-full px-10 relative">
         <span className="text-white flex flex-col items-center py-20">
-          <h1 className="text-3xl font-bold mb-2">My Skills</h1>
-          <p className=" font-light max-w-xl text-center">
+          <h1 className="text-3xl font-bold mb-2">Skills</h1>
+          <p className=" font-light max-w-xl text-center text-sm opacity-75">
             {'"'}I really believe that everyone has a talent, ability, or skill
             that he can mine to support himself and to succeed in life.{'"'}
             —Dean Koontz
@@ -45,7 +45,7 @@ const SkillCard = ({
   tools,
 }) => {
   return (
-    <div className="bg-white max-w-lg p-14 border rounded-lg border-indigo-50/50 space-y-24 shadow-2xl shadow-indigo-500/20">
+    <div className="bg-white max-w-lg p-14 border rounded-lg border-indigo-50/50 space-y-24 shadow-2xl shadow-indigo-500/20 hover:shadow-2xl hover:shadow-indigo-500/50">
       <div className="flex flex-col items-center gap-y-6">
         <span className="text-6xl text-indigo-500">{icon}</span>
         <h1 className="text-center font-semibold text-xl">{title}</h1>
