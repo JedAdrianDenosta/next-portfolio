@@ -7,7 +7,7 @@ import { AiFillFacebook as Facebook } from "react-icons/ai";
 
 const HeroSection = () => {
   return (
-    <div className="max-w-7xl mx-auto w-full px-10 py-12 lg:py-0 lg:pb-28">
+    <div className="max-w-7xl mx-auto w-full px-10 py-4 lg:py-0 lg:pb-28">
       {/* GRID CONTAINER */}
       <div className="grid lg:grid-cols-2">
         {/* COL 1 */}
