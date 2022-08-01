@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 import { AiFillGithub as GitHub } from "react-icons/ai";
 import { AiFillLinkedin as LinkedIn } from "react-icons/ai";
 import { AiFillFacebook as Facebook } from "react-icons/ai";
@@ -12,13 +14,31 @@ const HeroSection = () => {
       <div className="grid lg:grid-cols-2">
         {/* COL 1 */}
         <div className="flex flex-col gap-y-10 justify-center">
-          <span className=" space-y-2">
+          <motion.span
+            className=" space-y-2"
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 1.5,
+              delay: 1.5,
+              ease: "easeInOut",
+            }}
+          >
             <h1 className="text-gray-500">👋 Hello mate! I am,</h1>
             <h2 className="font-extrabold text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-sky-600 tracking-tight">
               Jed Adrian
             </h2>
-          </span>
-          <div className="text-2xl flex gap-x-5 text-gray-500">
+          </motion.span>
+          <motion.div
+            className="text-2xl flex gap-x-5 text-gray-500"
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 2,
+              delay: 2,
+              ease: "easeInOut",
+            }}
+          >
             <Link href="https://www.facebook.com/jedadrian.denosta">
               <a className="transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-800">
                 <Facebook />
@@ -34,8 +54,17 @@ const HeroSection = () => {
                 <LinkedIn />
               </a>
             </Link>
-          </div>
-          <div className="max-w-md text-sm font-light text-gray-500 ">
+          </motion.div>
+          <motion.div
+            className="max-w-md text-sm font-light text-gray-500 "
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 2.5,
+              delay: 2.5,
+              ease: "easeInOut",
+            }}
+          >
             <p>
               Working with{" "}
               <a className="underline underline-offset-1 decoration-sky-500">
@@ -55,8 +84,17 @@ const HeroSection = () => {
               is one of my passions, and I aspire to convey an emotion and a
               portrayal to people through photographs.
             </p>
-          </div>
-          <div className=" gap-4 pt-4 flex flex-wrap">
+          </motion.div>
+          <motion.div
+            className=" gap-4 pt-4 flex flex-wrap"
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 3,
+              delay: 3,
+              ease: "easeInOut",
+            }}
+          >
             <Link href={"#about"}>
               <a className="text-indigo-500 border border-indigo-500 px-5 sm:px-7 py-4 rounded-xl hover:bg-indigo-500/90 hover:text-white">
                 {" "}
@@ -72,10 +110,19 @@ const HeroSection = () => {
                 View Resume
               </a>
             </Link>
-          </div>
+          </motion.div>
         </div>
         {/* COL 2 */}
-        <div className="pt-12 lg:pt-0 flex items-center justify-center w-full h-fit">
+        <motion.div
+          className="pt-12 lg:pt-0 flex items-center justify-center w-full h-fit"
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 3.5,
+            delay: 2,
+            ease: "easeInOut",
+          }}
+        >
           <Image
             layout="intrinsic"
             src="/hero-image.svg"
@@ -83,7 +130,7 @@ const HeroSection = () => {
             width={600}
             height={600}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
