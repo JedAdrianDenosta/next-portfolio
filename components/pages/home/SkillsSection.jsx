@@ -14,14 +14,14 @@ const SkillsSection = () => {
       animation.start({
         y: 0,
         opacity: 1,
-        transition: { duration: 2, ease: "easeInOut" },
+        transition: { duration: 1.5, ease: "easeInOut" },
       });
     }
     if (!inView) {
       animation.start({
         opacity: 0,
         y: 70,
-        transition: { duration: 2, ease: "easeInOut" },
+        transition: { duration: 1.5, ease: "easeInOut" },
       });
     }
   }, [inView]);

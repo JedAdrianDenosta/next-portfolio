@@ -32,8 +32,8 @@ const Nav = () => {
                   className="hidden md:inline-block"
                   whileHover={{
                     y: -5,
-                    type: "spring",
-                    damping: 100,
+                    // type: "spring",
+                    // damping: 100,
                     textDecorationLine: "underline",
                     textUnderlineOffset: "5px",
                     textDecorationColor: "#6366f1",

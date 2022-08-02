@@ -44,19 +44,55 @@ const HeroSection = () => {
             }}
           >
             <Link href="https://www.facebook.com/jedadrian.denosta">
-              <a className="transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-800">
+              <motion.a
+                whileHover={{
+                  scale: 1.2,
+                  y: -5,
+                  // type: "spring",
+                  // damping: 100,
+                  textDecorationLine: "underline",
+                  textUnderlineOffset: "5px",
+                  textDecorationColor: "#6366f1",
+                }}
+                whileTap={{ scale: 0.9 }}
+                className="hover:text-gray-800"
+              >
                 <Facebook />
-              </a>
+              </motion.a>
             </Link>
             <Link href="https://github.com/JedAdrianDenosta">
-              <a className="transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-800">
+              <motion.a
+                whileHover={{
+                  scale: 1.2,
+                  y: -5,
+                  // type: "spring",
+                  // damping: 100,
+                  textDecorationLine: "underline",
+                  textUnderlineOffset: "5px",
+                  textDecorationColor: "#6366f1",
+                }}
+                whileTap={{ scale: 0.9 }}
+                className="hover:text-gray-800"
+              >
                 <GitHub />
-              </a>
+              </motion.a>
             </Link>
             <Link href="https://www.linkedin.com/in/jed-adrian-denosta-6b409720a/">
-              <a className="transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-800">
+              <motion.a
+                whileHover={{
+                  scale: 1.2,
+                  y: -5,
+                  // type: "spring",
+                  // damping: 100,
+                  textDecorationLine: "underline",
+                  textUnderlineOffset: "5px",
+                  textDecorationColor: "#6366f1",
+                }}
+                whileTap={{ scale: 0.9 }}
+                className="hover:text-gray-800"
+              >
                 <LinkedIn />
-              </a>
+              </motion.a>
             </Link>
           </motion.div>
           <motion.div
@@ -114,7 +150,7 @@ const HeroSection = () => {
                 "https://drive.google.com/file/d/1MpeEtfQljjV19Z3vQRlPQmwcoNc9JMw1/view?usp=sharing"
               }
             >
-              <a className="text-white border border-indigo-500 bg-indigo-500 px-5 sm:px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-2">
+              <a className="text-white border border-indigo-500 bg-indigo-500 px-5 sm:px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-3 hover:ease-linear">
                 View Resume
               </a>
             </Link>
