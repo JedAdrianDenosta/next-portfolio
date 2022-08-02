@@ -22,6 +22,8 @@ const HeroSection = () => {
               duration: 1.5,
               delay: 1.5,
               ease: "easeInOut",
+              damping: 100,
+              stiffness: 100,
             }}
           >
             <h1 className="text-gray-500">👋 Hello mate! I am,</h1>
@@ -37,6 +39,8 @@ const HeroSection = () => {
               duration: 2,
               delay: 2,
               ease: "easeInOut",
+              damping: 100,
+              stiffness: 100,
             }}
           >
             <Link href="https://www.facebook.com/jedadrian.denosta">
@@ -63,6 +67,8 @@ const HeroSection = () => {
               duration: 2.5,
               delay: 2.5,
               ease: "easeInOut",
+              damping: 100,
+              stiffness: 100,
             }}
           >
             <p>
@@ -93,6 +99,8 @@ const HeroSection = () => {
               duration: 3,
               delay: 3,
               ease: "easeInOut",
+              damping: 100,
+              stiffness: 100,
             }}
           >
             <Link href={"#about"}>
@@ -121,6 +129,8 @@ const HeroSection = () => {
             duration: 3.5,
             delay: 2,
             ease: "easeInOut",
+            damping: 100,
+            stiffness: 100,
           }}
         >
           <Image

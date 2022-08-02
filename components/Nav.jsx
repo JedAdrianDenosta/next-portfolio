@@ -14,9 +14,11 @@ const Nav = () => {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
-          duration: 1,
+          duration: 0.8,
           delay: 1,
           ease: "easeInOut",
+          damping: 100,
+          stiffness: 100,
         }}
       >
         <Link href="/">
@@ -26,11 +28,23 @@ const Nav = () => {
           {navbarLinks.map((navbarLink, i) => {
             return (
               <Link href={navbarLink.route} key={i}>
-                <a className="hidden md:inline-block">
-                  <li className="text-sm text-gray-500 hover:text-indigo-500 focus:text-indigo-500 focus:bg-gray-200 focus:outline-none focus:shadow-outline no-underline hover:underline hover:underline-offset-8 hover:font-semibold">
+                <motion.a
+                  className="hidden md:inline-block"
+                  whileHover={{
+                    y: -5,
+                    type: "spring",
+                    damping: 100,
+                    textDecorationLine: "underline",
+                    textUnderlineOffset: "5px",
+                    textDecorationColor: "#6366f1",
+                  }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <li className="text-sm text-gray-500 hover:text-indigo-500 cursor-pointer">
+                    {/* hover:text-indigo-500 focus:text-indigo-500 focus:bg-gray-200 focus:outline-none focus:shadow-outline no-underline hover:underline hover:underline-offset-8 hover:font-semibold */}
                     {navbarLink.name}
                   </li>
-                </a>
+                </motion.a>
               </Link>
             );
           })}

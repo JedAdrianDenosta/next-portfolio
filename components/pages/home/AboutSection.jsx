@@ -1,15 +1,42 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import { AiFillGithub as GitHub } from "react-icons/ai";
 import { AiFillLinkedin as LinkedIn } from "react-icons/ai";
 import { AiFillFacebook as Facebook } from "react-icons/ai";
 
 const AboutSection = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: { duration: 2, ease: "easeInOut" },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+        y: 70,
+        transition: { duration: 2, ease: "easeInOut" },
+      });
+    }
+  }, [inView]);
   return (
     <div className="relative" id="about">
       <div className="mx-auto w-full h-1/4 lg:h-1/2 absolute bg-indigo-500 right-0 left-0"></div>
-      <div className="max-w-7xl mx-auto w-full px-10 mb-36 lg:mb-56 relative">
+      <motion.div
+        ref={ref}
+        className="max-w-7xl mx-auto w-full px-10 mb-36 lg:mb-56 relative"
+      >
         <span className="text-white flex flex-col items-center py-20">
           <h1 className="text-3xl font-bold mb-2">About Me</h1>
           <p className=" font-light max-w-xl text-center text-sm opacity-75">
@@ -18,7 +45,10 @@ const AboutSection = () => {
             Roosevelt
           </p>
         </span>
-        <div className="flex flex-col lg:flex-row justify-center gap-10">
+        <motion.div
+          animate={animation}
+          className="flex flex-col lg:flex-row justify-center gap-10"
+        >
           <div className="bg-white rounded-lg shadow-2xl shadow-indigo-500/10 lg:max-w-sm h-full space-y-5 p-10">
             <span className="flex justify-center">
               <Image
@@ -103,8 +133,8 @@ const AboutSection = () => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
