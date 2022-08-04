@@ -3,17 +3,24 @@ import Link from "next/link";
 import { AiFillGithub as GitHub } from "react-icons/ai";
 import { AiFillLinkedin as LinkedIn } from "react-icons/ai";
 import { AiFillFacebook as Facebook } from "react-icons/ai";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
   return (
     <>
       <footer className="bg-indigo-500 mx-auto w-full">
         <div className="max-w-7xl mx-auto w-full py-10 space-y-10 text-white">
-          <Link href="/">
-            <a className=" text-xl font-bold tracking-wide flex justify-center">
+          <div className=" text-xl font-bold tracking-wide flex justify-center">
+            <button
+              to="hero"
+              onClick={() => {
+                scroll.scrollToTop();
+              }}
+            >
               JAD
-            </a>
-          </Link>
+            </button>
+          </div>
+
           <div className="text-2xl flex justify-center gap-x-5">
             <Link href="https://www.facebook.com/jedadrian.denosta">
               <a className="hover:opacity-75">

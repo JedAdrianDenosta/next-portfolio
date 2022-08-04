@@ -1,7 +1,6 @@
 import React from "react";
-import Link from "next/link";
-import navbarLinks from "../data/navbarLinks";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
@@ -21,13 +20,108 @@ const Nav = () => {
           stiffness: 100,
         }}
       >
-        <Link href="/">
-          <a className=" text-xl font-bold tracking-wide text-sky-500">JAD</a>
+        <Link
+          to="hero"
+          smooth={true}
+          duration={1000}
+          className="cursor-pointer text-xl font-bold tracking-wide text-sky-500"
+        >
+          JAD
         </Link>
-        <ul className="flex gap-x-2 md:gap-x-10">
+
+        <div className="flex gap-x-2 md:gap-x-10 ">
+          <motion.div
+            className="hidden md:inline-block"
+            whileHover={{
+              y: -5,
+              textDecorationLine: "underline",
+              textUnderlineOffset: "5px",
+              textDecorationColor: "#6366f1",
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link
+              className="text-sm text-gray-500 hover:text-indigo-500 cursor-pointer"
+              to="hero"
+              smooth={true}
+              duration={1000}
+            >
+              Home
+            </Link>
+          </motion.div>
+          <motion.div
+            className="hidden md:inline-block"
+            whileHover={{
+              y: -5,
+              textDecorationLine: "underline",
+              textUnderlineOffset: "5px",
+              textDecorationColor: "#6366f1",
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link
+              className="text-sm text-gray-500 hover:text-indigo-500 cursor-pointer"
+              to="skills"
+              smooth={true}
+              duration={1000}
+            >
+              Skills
+            </Link>
+          </motion.div>
+          <motion.div
+            className="hidden md:inline-block"
+            whileHover={{
+              y: -5,
+              textDecorationLine: "underline",
+              textUnderlineOffset: "5px",
+              textDecorationColor: "#6366f1",
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link
+              className="text-sm text-gray-500 hover:text-indigo-500 cursor-pointer"
+              to="projects"
+              smooth={true}
+              duration={1000}
+            >
+              Projects
+            </Link>
+          </motion.div>
+          <motion.div
+            className="hidden md:inline-block"
+            whileHover={{
+              y: -5,
+              textDecorationLine: "underline",
+              textUnderlineOffset: "5px",
+              textDecorationColor: "#6366f1",
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link
+              className="text-sm text-gray-500 hover:text-indigo-500 cursor-pointer"
+              to="about"
+              smooth={true}
+              duration={1000}
+            >
+              About
+            </Link>
+          </motion.div>
+        </div>
+        {/* <motion.ul
+          className="flex gap-x-2 md:gap-x-10 "
+          whileHover={{
+            y: -5,
+            // type: "spring",
+            // damping: 100,
+            textDecorationLine: "underline",
+            textUnderlineOffset: "5px",
+            textDecorationColor: "#6366f1",
+          }}
+          whileTap={{ scale: 0.9 }}
+        >
           {navbarLinks.map((navbarLink, i) => {
             return (
-              <Link href={navbarLink.route} key={i}>
+              <Link href={navbarLink.to} key={i}>
                 <motion.a
                   className="hidden md:inline-block"
                   whileHover={{
@@ -39,16 +133,15 @@ const Nav = () => {
                     textDecorationColor: "#6366f1",
                   }}
                   whileTap={{ scale: 0.9 }}
-                >
-                  <li className="text-sm text-gray-500 hover:text-indigo-500 cursor-pointer">
-                    {/* hover:text-indigo-500 focus:text-indigo-500 focus:bg-gray-200 focus:outline-none focus:shadow-outline no-underline hover:underline hover:underline-offset-8 hover:font-semibold */}
+                > className="text-sm text-gray-500 hover:text-indigo-500 cursor-pointer"
+                  <li >
                     {navbarLink.name}
                   </li>
                 </motion.a>
               </Link>
             );
           })}
-        </ul>
+        </motion.ul> */}
       </motion.div>
     </>
   );

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 import { AiFillGithub as GitHub } from "react-icons/ai";
 import { AiFillLinkedin as LinkedIn } from "react-icons/ai";
@@ -9,7 +9,7 @@ import { AiFillFacebook as Facebook } from "react-icons/ai";
 
 const HeroSection = () => {
   return (
-    <div className="max-w-7xl mx-auto w-full px-10 lg:py-0 lg:pb-28">
+    <div id="hero" className="max-w-7xl mx-auto w-full px-10 lg:py-0 lg:pb-28">
       {/* GRID CONTAINER */}
       <div className="grid lg:grid-cols-2">
         {/* COL 1 */}
@@ -43,21 +43,26 @@ const HeroSection = () => {
               stiffness: 100,
             }}
           >
-            <Link href="https://www.facebook.com/jedadrian.denosta">
-              <a className="hover:text-gray-800">
-                <Facebook />
-              </a>
-            </Link>
-            <Link href="https://github.com/JedAdrianDenosta">
-              <a className="hover:text-gray-800">
-                <GitHub />
-              </a>
-            </Link>
-            <Link href="https://www.linkedin.com/in/jed-adrian-denosta-6b409720a/">
-              <a className="hover:text-gray-800">
-                <LinkedIn />
-              </a>
-            </Link>
+            <a
+              className="hover:text-gray-800"
+              href="https://www.facebook.com/jedadrian.denosta"
+            >
+              <Facebook />
+            </a>
+
+            <a
+              className="hover:text-gray-800"
+              href="https://github.com/JedAdrianDenosta"
+            >
+              <GitHub />
+            </a>
+
+            <a
+              className="hover:text-gray-800"
+              href="https://www.linkedin.com/in/jed-adrian-denosta-6b409720a/"
+            >
+              <LinkedIn />
+            </a>
           </motion.div>
           <motion.div
             className="max-w-md text-sm font-light text-gray-500 "
@@ -103,21 +108,23 @@ const HeroSection = () => {
               stiffness: 100,
             }}
           >
-            <Link href={"#about"}>
-              <a className="text-indigo-500 border border-indigo-500 px-5 sm:px-7 py-4 rounded-xl hover:bg-indigo-500/90 hover:text-white">
-                {" "}
-                Get In Touch
-              </a>
-            </Link>
             <Link
+              to="about"
+              smooth={true}
+              duration={1000}
+              className="cursor-pointer text-indigo-500 border border-indigo-500 px-5 sm:px-7 py-4 rounded-xl hover:bg-indigo-500/90 hover:text-white"
+            >
+              Get In Touch
+            </Link>
+
+            <a
               href={
                 "https://drive.google.com/file/d/1MpeEtfQljjV19Z3vQRlPQmwcoNc9JMw1/view?usp=sharing"
               }
+              className="cursor-pointer text-white border border-indigo-500 bg-indigo-500 px-5 sm:px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-3 hover:ease-linear "
             >
-              <a className="text-white border border-indigo-500 bg-indigo-500 px-5 sm:px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-indigo-500/30 transition hover:-translate-y-3 hover:ease-linear ">
-                View Resume
-              </a>
-            </Link>
+              View Resume
+            </a>
           </motion.div>
         </div>
         {/* COL 2 */}
