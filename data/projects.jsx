@@ -17,6 +17,21 @@ const projects = [
     images: ["https://jedadriandenosta.netlify.app/img/5.PNG"],
   },
   {
+    projectName: "Cuartero NHS-SPA Website",
+    projectDescription: (
+      <>
+        <p>
+          Cuartero National High School Special Program in the Arts in Cuartero,
+          Capiz, Philippines purposedly to showcase different outputs of our
+          students taking the SPA program and promote meaningful exchange of
+          ideas to its linkages (on-going).
+        </p>
+      </>
+    ),
+    url: "/",
+    images: ["https://jedadriandenosta.netlify.app/img/5.PNG"],
+  },
+  {
     projectName: "DC Portraitures",
     projectDescription: (
       <>
