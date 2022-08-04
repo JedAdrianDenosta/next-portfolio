@@ -1,19 +1,19 @@
 const navbarLinks = [
   {
     name: "Home",
-    route: "/",
+    to: "hero",
   },
   {
     name: "Skills",
-    route: "/#skills",
+    to: "skills",
   },
   {
     name: "Projects",
-    route: "/#projects",
+    to: "projects",
   },
   {
     name: "About",
-    route: "/#about",
+    to: "about",
   },
 ];
 
