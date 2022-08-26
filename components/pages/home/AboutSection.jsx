@@ -102,11 +102,11 @@ const AboutSection = () => {
             </h1>
             <div className="text-gray-600 space-y-6">
               <p>
-                Mabuhay! ✨ I am Jed Adrian Denosta, 21 years of age, and I
+                Mabuhay! ✨ I am Jed Adrian Denosta, 22 years of age, and I
                 reside in Capiz, Philippines.
               </p>
               <p>
-                I am a 🧑‍💻 Junior student at West Visayas State University
+                I am a 🧑‍💻 Student student at West Visayas State University
                 pursuing a Bachelor of Science in Computer Science specializing
                 in Artificial Intelligence. My hobbies are ✏️ UX and UI Design,
                 📷 Photography, and 🏸 Badminton.

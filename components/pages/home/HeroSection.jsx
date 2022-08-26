@@ -3,6 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
+// Adjust some duration on motion library
+
 import { AiFillGithub as GitHub } from "react-icons/ai";
 import { AiFillLinkedin as LinkedIn } from "react-icons/ai";
 import { AiFillFacebook as Facebook } from "react-icons/ai";
@@ -19,8 +21,8 @@ const HeroSection = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 1.5,
-              delay: 1.5,
+              duration: 1.3,
+              delay: 1.3,
               ease: "easeInOut",
               damping: 100,
               stiffness: 100,
@@ -36,8 +38,8 @@ const HeroSection = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 2,
-              delay: 2,
+              duration: 1.5,
+              delay: 1.5,
               ease: "easeInOut",
               damping: 100,
               stiffness: 100,
@@ -69,8 +71,8 @@ const HeroSection = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 2.5,
-              delay: 2.5,
+              duration: 2,
+              delay: 2,
               ease: "easeInOut",
               damping: 100,
               stiffness: 100,
@@ -101,8 +103,8 @@ const HeroSection = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 3,
-              delay: 3,
+              duration: 2.5,
+              delay: 2.5,
               ease: "easeInOut",
               damping: 100,
               stiffness: 100,
@@ -133,8 +135,8 @@ const HeroSection = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
-            duration: 3.5,
-            delay: 2,
+            duration: 2.5,
+            delay: 2.5,
             ease: "easeInOut",
             damping: 100,
             stiffness: 100,
