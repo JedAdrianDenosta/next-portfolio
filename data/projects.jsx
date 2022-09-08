@@ -24,8 +24,9 @@ const projects = [
           Cuartero National High School Special Program in the Arts in Cuartero,
           Capiz, Philippines purposedly to showcase different outputs of our
           students taking the SPA program and promote meaningful exchange of
-          ideas to its linkages (on-going).
+          ideas to its linkages.
         </p>
+        <p>Note: The project is on-going</p>
       </>
     ),
     url: "/",
