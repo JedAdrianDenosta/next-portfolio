@@ -102,11 +102,11 @@ const AboutSection = () => {
             </h1>
             <div className="text-gray-600 space-y-6">
               <p>
-                Mabuhay! ✨ I am Jed Adrian Denosta, years of age, and I reside
-                in Capiz, Philippines.
+                Mabuhay! ✨ I am Jed Adrian Denosta, 22 years of age, and I
+                reside in Capiz, Philippines.
               </p>
               <p>
-                I am a 🧑‍💻 Student student at West Visayas State University
+                I am a 🧑‍💻 senior student at West Visayas State University
                 pursuing a Bachelor of Science in Computer Science specializing
                 in Artificial Intelligence. My hobbies are ✏️ UX and UI Design,
                 📷 Photography, and 🏸 Badminton.
@@ -118,14 +118,6 @@ const AboutSection = () => {
                 as it benefits individuals even with the slight help by saving
                 lives. Artificial Intelligence makes society evolve as it seeks
                 to solve concerns much faster and more accurately.
-              </p>
-              <p>
-                With my passion for technology, our current thesis study assists
-                first responders in expediting their workflow where emergency
-                cases are streamlined with the use of AI. Through our
-                application, the algorithm we built recommends a list of
-                hospitals and helps transport patients to the nearest and best
-                hospital for the patient{"'"}s needs.
               </p>
               <p>
                 Poor health services in my country really push me to work in
