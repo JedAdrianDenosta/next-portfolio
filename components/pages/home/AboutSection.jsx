@@ -111,7 +111,6 @@ const AboutSection = () => {
                 in Artificial Intelligence. My hobbies are ✏️ UX and UI Design,
                 📷 Photography, and 🏸 Badminton.
               </p>
-
               <p>
                 Technology has been a massive part of my life; it is where my
                 interest thrives, mainly in 🏥 medical care, and I aim to assist

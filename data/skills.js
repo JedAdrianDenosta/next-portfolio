@@ -9,7 +9,7 @@ const skills = [
     description:
       "I favor clear design patterns, basic content organization, and intelligent interactions.",
     header: "Things I enjoy designing:",
-    list: "UX, UI, Web, Mobile, Apps, Logos",
+    list: "UX, UI, UXR, Wireframes, Prototyping, Web, Mobile, Apps, Logos",
     titleTwo: "Design Tools:",
     tools: "Figma, Adobe XD, Photoshop, Illustrator, Pen & Paper",
   },
